@@ -32,3 +32,10 @@ let triger = (id, a, b) => {
   let price = document.getElementById(b).innerHTML;
   document.querySelector('.total').innerHTML = `${price}`;
 };
+
+let add = () => {
+  let total = document.querySelector('.total').innerHTML;
+  total !== 'DKK 0.00'
+    ? alert('cart added successfuly')
+    : alert('plz select first');
+};
