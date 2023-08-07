@@ -21,7 +21,7 @@ let triger = (id, a, b) => {
 
   //for onclick event we change the background
   let sel1 = document.getElementById(a);
-  sel1.style.cssText = 'border: 1px solid #007F61;background-color: #F4FBF9;';
+  sel1.style.cssText = 'border: 2px solid #007F61;background-color: #F4FBF9;';
 
   //get onclick price detail in total
   let price = document.getElementById(b).innerHTML;
