@@ -30,9 +30,8 @@ let triger = (id, a, b) => {
   sel1.style.cssText = 'border: 1px solid #007F61;background-color: #F4FBF9;';
 
   let price = document.getElementById(b).innerHTML;
-  document.querySelector('.total').innerHTML = `${price}`;
+  document.querySelector('.total').innerHTML = `Total : ${price}`;
 };
-
 let add = () => {
   let total = document.querySelector('.total').innerHTML;
   total !== 'DKK 0.00'
