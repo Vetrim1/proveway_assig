@@ -2,7 +2,7 @@
 
 first we create line within text & make it after& before effect
 
-<h2 class="head"><span>Bundle & Save</span></h2>
+<!-- <h2 class="head"><span>Bundle & Save</span></h2> -->
 
 next create a container for box model
 
@@ -34,5 +34,3 @@ get onclick price detail in total
 <!-- let price = document.getElementById(b).innerHTML;
 document.querySelector('.total').innerHTML = `Total : ${price}`;
 }; -->
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-bw1qq4)
