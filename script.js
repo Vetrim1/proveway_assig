@@ -25,7 +25,7 @@ let triger = (id, a, b) => {
 
   //get onclick price detail in total
   let price = document.getElementById(b).innerHTML;
-  document.querySelector('.total').innerHTML = `Total : ${price}`;
+  document.querySelector('.total').innerHTML = `Total : <b>${price}</b>`;
 };
 
 //It can be use for cannot select any pair then the add card button will alert
