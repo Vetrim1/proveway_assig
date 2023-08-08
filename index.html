@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/metropolis"
+      type="text/css"
+    />
   </head>
 
   <body>
@@ -19,7 +25,7 @@
       <!-- Using onclick event we send a parameter like 
         table id for table shown, box id for background change,p1 for get a price details-->
       <div class="box 1" id="b1">
-        <div style="display: flex">
+        <!-- <div style="display: flex">
           <input
             type="radio"
             name="pair"
@@ -34,6 +40,23 @@
 
         <div>
           <h5 class="off">50% OFF</h5>
+        </div> -->
+        <div style="display: flex">
+          <input
+            type="radio"
+            name="pair"
+            value="1pair"
+            onclick="triger('tt1','b1','p1')"
+          />
+          <div class="price" align="left" style="padding: 10px; margin: auto">
+            <h5 class="pair">1 Pair</h5>
+            <h5 id="p1">DKK 195.00</h5>
+          </div>
+        </div>
+
+        <!-- <div class="price" style="padding: 10px; margin: auto"> -->
+        <div>
+          <h5 style="padding: 10px; margin: 10px 0">50% OFF</h5>
         </div>
         <div class="table" id="tt1" style="display: none">
           <table class="tableclone" style="empty-cells: hide">
@@ -103,13 +126,20 @@
           </div>
         </div>
         <h6
-          style="font-size: 10px; text-decoration: line-through; color: #b1aeae"
+          style="
+            font-size: 12px;
+            font-weight: normal;
+            text-decoration: line-through;
+            color: #b1aeae;
+            margin-top: 32px;
+            margin-bottom: 1.3px;
+          "
         >
           DKK 195.00
         </h6>
 
-        <div class="price" style="padding: 10px; margin: auto">
-          <h5 style="font-size: 12px; color: #007f61">Most Popular</h5>
+        <div class="price" style="padding: 10px">
+          <h5 class="most">Most Popular</h5>
           <h5>40% OFF</h5>
         </div>
 
@@ -184,7 +214,7 @@
         </div>
 
         <div>
-          <h5 class="off">60% OFF</h5>
+          <h5 class="off" style="padding: 10px; margin: 10px 0">60% OFF</h5>
         </div>
         <div class="table" id="tt3" name="t3" style="display: none">
           <table class="tableclone" style="empty-cells: hide">
@@ -251,10 +281,8 @@
       <div class="box" style="justify-content: center">
         <button onclick="add()">+ Add to Cart</button>
       </div>
-      <div style="font-size: 12px">
-        <p class="copy" style="text-align: right">
-          &#169; <i>Powered by Pumper</i>
-        </p>
+      <div style="font-size: 11px; text-align: right; width: 110%">
+        <p class="copy">&#169; <i>Powered by Pumper</i></p>
       </div>
     </main>
 

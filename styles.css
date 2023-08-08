@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'MetropolisRegular';
+  font-weight: 400;
+  font-size: 14.46px;
+  /* font-family: 'Inter', sans-serif; */
 }
 
 .head {
   margin-bottom: 2px;
-  margin-right: 40px;
+  margin-right: 6px;
 }
 
 h2 span {
   color: #007f61;
-  font-size: clamp(1rem, 1.5vw, 1rem);
+  /* font-size: clamp(1rem, 1.5vw, 1rem); */
   position: relative;
   display: inline-block;
+  font-size: 18px;
 }
 
 h2 span:after,
@@ -23,10 +28,9 @@ span:before {
   content: '';
   position: absolute;
   top: 50%;
-  border-bottom: 2px solid;
-  width: 80%;
+  border-bottom: 0.9px solid #c8c8c8;
+  width: 82%;
   margin: 0 20px;
-  color: #bfbdbd;
 }
 
 .head > span:before {
@@ -45,8 +49,11 @@ span:before {
   display: flex;
   justify-content: space-between;
   border-radius: 6px;
-  max-width: 300px;
+  max-width: 350px;
   flex-wrap: wrap;
+}
+.pair {
+  padding-bottom: 5px;
 }
 
 .price > h5 {
@@ -65,14 +72,28 @@ input {
 .box:nth-child(4) {
   border: none;
   color: #007f61;
+  font-family: 'Inter', sans-serif;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-items: center;
   align-items: center;
   margin: 0px 10px;
   padding: 0px;
+  font-size: clamp(1rem, 1vw, 1rem);
 }
 
 .box:nth-child(4) > p:last-child {
   color: black;
+}
+h5.pair {
+  font-weight: normal;
+}
+.most {
+  font-size: 12.65px;
+  color: #007f61;
+  padding-bottom: 5px;
+  font-family: 'Inter', sans-serif;
+  line-height: 15.31px;
 }
 
 .box:nth-child(5) {
@@ -86,13 +107,15 @@ input {
     cursor: pointer;
   }
 }
-
+.table {
+  margin-left: 10px;
+}
 table {
   border-spacing: 5px 10px;
 }
 th,
 td {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: normal;
 }
 
@@ -150,10 +173,10 @@ select {
   }
   h2 span:after,
   span:before {
-    width: 60%;
+    width: 55%;
   }
   h2.head {
-    margin-left: 40px;
+    margin-left: 6px;
   }
   h2 > span {
     text-align: center;
@@ -164,6 +187,16 @@ select {
   .copy {
     text-align: right;
     margin-right: 10px;
+  }
+  .box:nth-child(4) {
+    margin-left: 10px;
+    font-size: 11px;
+  }
+  .box:nth-child(2) {
+    /* flex-wrap: nowrap; */
+  }
+  .most {
+    font-size: 8px;
   }
 }
 

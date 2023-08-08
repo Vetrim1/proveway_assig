@@ -33,7 +33,7 @@ let add = () => {
   let total = document.querySelector('.total').innerHTML;
   total !== 'DKK 0.00'
     ? alert('cart added successfuly')
-    : alert('plz select first');
+    : alert('Plz select first');
 };
 
 //nothing////
